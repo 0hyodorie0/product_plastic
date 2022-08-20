@@ -128,7 +128,7 @@ img {
     content: "";
     position: absolute;
     display: block;
-    top: 80%;
+    top: 82%;
     left: 0;
     height: 0.5px;
     width: 100%;
@@ -150,12 +150,10 @@ img {
 }
 
 .column {
+    height: 200vh;
     column-count: 4;
     column-gap: 20px;
-    /* flex: 1; */
-    padding: 120px 10px 400px 10px;
-    /*display:flex; 
-    flex-direction:column-reverse*/
+    padding: 120px 10px;
 }
 
 .vertical_line {
@@ -217,7 +215,30 @@ img {
 
 .content_box {
     display: inline-block;
-    margin: 10px 0 20px;
+    margin: 10px 0 30px;
+}
+
+.img_wrap {
+    position: relative;
+}
+
+.img_wrap::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../img/hover_symbol.png');
+    background-size: 180%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+}
+
+.content_box:hover .img_wrap::after {
+    opacity: 1;
 }
 
 .text_box {
@@ -227,7 +248,7 @@ img {
     font-size: 12px;
 }
 
-.blueLink {
+.bluelink {
     font-weight: bold;
     color: blue
 }
