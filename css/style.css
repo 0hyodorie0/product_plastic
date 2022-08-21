@@ -101,7 +101,7 @@ img {
 .menu a input {
     width: 15px;
     border-radius: 0;
-    appearance: none;
+    /* appearance: none; */
     border: 0.5px solid;
     height: 15px;
     display: inline-block;
@@ -150,10 +150,8 @@ img {
 }
 
 .column {
-    height: 200vh;
     column-count: 4;
     column-gap: 20px;
-    padding: 120px 10px;
 }
 
 .vertical_line {
@@ -215,7 +213,7 @@ img {
 
 .content_box {
     display: inline-block;
-    margin: 10px 0 30px;
+    margin: 10px 0 22px;
 }
 
 .img_wrap {
@@ -268,4 +266,18 @@ img {
     border: 1px solid;
     margin-left: 5px;
     font-size: 12px;
+}
+
+.prd_detail {
+    text-align: center;
+}
+
+.prd_detail_img {
+    width: calc(100% / 3);
+    display: inline-block;
+    line-height: 4;
+}
+
+.content_section article {
+    padding: 120px 10px 330px;
 }
