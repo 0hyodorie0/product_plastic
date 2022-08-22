@@ -98,6 +98,10 @@ img {
     margin-right: 30px;
 }
 
+.back {
+    font-weight: bold;
+}
+
 .menu a {
     margin: 0 20px;
     color: #000;
@@ -363,6 +367,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: calc(100% / 2.1);
 }
 
 .select_size,
@@ -371,10 +376,19 @@ img {
     align-items: center;
 }
 
-.select_size {
-    margin: 0 5.7rem;
+.select_size ul {
+    margin-left: 2rem;
 }
 
 .select_size li {
     display: inline-block;
+}
+
+.prd_price .main_button {
+    padding: 4px;
+    margin-left: 1.5rem;
+}
+
+.prd_price .main_button .underline {
+    font-weight: normal;
 }
