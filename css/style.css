@@ -476,3 +476,7 @@ img {
     outline: none;
     padding: 0 4px;
 }
+
+.cart_order_bar b~span {
+    margin-left: 12px;
+}
