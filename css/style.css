@@ -542,8 +542,9 @@ img {
 .prd_breadcrumbs {
     position: fixed;
     top: 5.5rem;
-    left: 35rem;
+    left: 23rem;
     z-index: 1;
+    text-decoration: underline;
 }
 
 .purchase_bar .text_box,
@@ -601,4 +602,43 @@ img {
     top: 38%;
     right: 26%;
     transform: translate(-23%, -40%);
+}
+
+.login .content_section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_wrap {
+    width: calc(100% / 3)
+}
+
+.login_wrap h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.login_input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    outline: none;
+    border: 1px solid #eee;
+}
+
+.login_input_btn {
+    background: #000;
+    color: #fff;
+}
+
+.login_wrap ul {
+    text-align: center;
+}
+
+.login_wrap li {
+    display: inline-block;
+    margin: 10px 20px;
 }
