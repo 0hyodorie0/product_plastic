@@ -9,3 +9,14 @@ $('.view_size_guide').on('click', function() {
 $('.table_close_btn').on('click', function() {
     table.removeClass('active');
 });
+
+let mobile = $('.mobile_menu_btn');
+let header = $('.header');
+if ($(window).width() > 1112) {
+    header.addClass('active');
+} else {
+    header.removeClass('active')
+}
+$('.mobile_menu').on('click', function() {
+    mobile.toggleClass('active')
+})
